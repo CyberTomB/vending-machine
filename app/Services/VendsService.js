@@ -1,8 +1,9 @@
 import { ProxyState } from "../AppState.js";
 
 class VendsService {
-   vend() {
-      console.log(ProxyState.snack)
+   vend(str) {
+      console.log(str)
+      console.log(ProxyState.snickers)
    }
 }
 
