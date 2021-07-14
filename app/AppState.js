@@ -5,7 +5,11 @@ import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
    /** @type {Value[]} */
-   snickers = new Snack('snickers', 1)
+   snacks = {
+      snickers: new Snack('snickers', 1),
+      twix: new Snack('twix', 1.25),
+      skittles: new Snack('skittles', 0.75)
+   }
    values = []
 
    cash = 0
